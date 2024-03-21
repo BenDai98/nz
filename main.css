@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
+    background-color: #c7c1c1;
     max-width: 1280px;
     margin: auto;
 }
@@ -24,13 +24,14 @@ main {
     max-width: 1024px;
     margin: auto;
     margin-top: -50px;
-    border-left: 1px dashed gray;
-    border-right: 1px dashed gray;
-    border-bottom: 1px dashed gray;
+    border-left: 5px dashed gray;
+    border-right: 5px dashed gray;
+    border-bottom: 5px dashed gray;
 }
 
 article {
     padding: 1em;
+    background-color: white;
 }
 
 article p {
@@ -67,15 +68,19 @@ footer nav {
 }
 
 a {
-    color: black;
+    color: rgb(59, 58, 58);
+}
+
+a:hover {
+    color: blueviolet;
 }
 
 header img,
 figure>img,
 #map {
     box-shadow:
-        0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        0 8px 16px 0 rgba(0, 0, 0, 0.8),
+        0 12px 40px 0 rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 1280px) {
@@ -88,3 +93,14 @@ figure>img,
         width: 100%;
     }
 }
+
+nav a {
+    background-color: #9c9457;
+    padding: 1em;
+    margin: 1em;
+}
+
+nav a:hover {
+    background-color: #d5cb86;
+}
+
