@@ -9,10 +9,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-let marker = L.marker([-43.595136, 170.142103]).addTo(map);
-marker.bindPopup("<strong>Hello world!</strong><br>I am a popup.").openPopup();
-
-let circle = L.circle([-43.585754, 170.179254], {
+let marker = L.marker([lat, long]).addTo(map);
+marker.bindPopup(`
+    <h2>Mount Cook!</h2><br>
+    <ul>
+        <li>Breite: ${lat.toFixed(5)}</li>
+        <li>Laenge: ${long.toFixed(5)}</li>
+    </ul>
+`).openPopup();
+let circle = L.circle([lat, long], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
